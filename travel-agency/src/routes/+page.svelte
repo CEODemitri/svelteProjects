@@ -41,39 +41,42 @@
 	<section class="popular-destinations">
 		<article class="box">
             <img src="../elf/elEgypt.jpeg" alt="el Egypt at dusk" class="pop-img">
-			<h2>This Place</h2>
-			<p>
+			<h2>Thoth Trail</h2>
+			<div class="pop-details">
                 <!-- icon -->
-                <span class="pop-location">Location</span>
+                <span class="pop-location">el Egypt</span>
                 <article>
                     <!-- icon -->
                     <span class="pop-rating">5.0</span>
                 </article>
-			<p>BTC 1,000,000</p>
+            </div>
+			<p class="price">BTC 1,000,000</p>
 		</article>
 		<article class="box">
             <img src="../elf/elArtica.jpeg" alt="ancient buildings of el Artica" class="pop-img">
 			<h2>This Place</h2>
-			<p>
+			<div class="pop-details">
                 <!-- icon -->
                 <span class="pop-location">Location</span>
                 <article>
                     <!-- icon -->
                     <span class="pop-rating">5.0</span>
                 </article>
-			<p>BTC 1,000,000</p>
+            </div>
+			<p class="price">BTC 1,000,000</p>
 		</article>
 		<article class="box">
             <img src="../elf/elGreenLand.jpeg" alt="el GreenLand at late dawn" class="pop-img">
 			<h2>This Place</h2>
-			<p>
+			<div class="pop-details">
                 <!-- icon -->
                 <span class="pop-location">Location</span>
                 <article>
                     <!-- icon -->
                     <span class="pop-rating">5.0</span>
                 </article>
-			<p>BTC 1,000,000</p>
+            </div>
+			<p class="price">BTC 1,000,000</p>
 		</article>
 	</section>
 	<button>See More</button>
@@ -177,7 +180,7 @@
     }
 
     .popular-container {
-        height: 450px;
+        height: 500px;
         width: 85%;
         margin: auto;
         display: flex;
@@ -188,7 +191,7 @@
     }
 
     .popular-title {
-        font-size: clamp(2.2vw, 2.8vw, 3.5vw);
+        font-size: clamp(2.5vw, 3.2vw, 3.7vw);
         text-align: center;
     }
 
@@ -208,12 +211,27 @@
 
     .box {
         outline: 1px solid grey;
-        padding: 3px;
+        padding: 5px;
         border-radius: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .pop-details {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
     }
 
     .pop-img {
         width: 100%;
         border-radius: 10px 0 0 0;
+    }
+
+    .price {
+        color: lightseagreen;
+        font-weight: bold;
+        margin-top: 5px;
     }
 </style>
