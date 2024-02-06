@@ -35,7 +35,7 @@
 </div>
 <div class="popular-container">
 	<section>
-		<h1 class="popular-title"><span>Popular</span> Accommodations Near You</h1>
+		<h2 class="popular-title"><span>Popular</span> Accommodations Near You</h2>
 		<p class="popular-paragraph">Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
 	</section>
 	<section class="popular-destinations">
@@ -81,7 +81,43 @@
 	</section>
 	<button>See More</button>
 </div>
-<div class="value-container"></div>
+<div class="value-container">
+    <!-- image section -->
+    <section>
+        <img src="../elf/sight-seeing.png" alt="family using Trek sight seeing, enjoying the view" width="400px">
+    </section>
+
+    <!-- text section -->
+    <section class="right-value">
+        <article>
+            <h2>Why <span>Choose</span> Us</h2>
+            <p>We offer unbeatable prices and personalized experiences.</p>
+        </article>
+
+        <article class="highlight">
+            <!-- each span is an icon -->
+            <span></span>
+            <div>
+                <h3>Wide Range Options</h3>
+                <p>Offers a diverse selection of accommodations.</p>
+            </div>
+        </article>
+        <article>
+            <span></span>
+            <div>
+                <h3>Best Prices and Special Offers</h3>
+                <p>Guarantee the best prices for every booking.</p>
+            </div>
+        </article>
+        <article>
+            <span></span>
+            <div>
+                <h3>Flexible Cancellation</h3>
+                <p>User has flexibility to modify at request.</p>
+            </div>
+        </article>
+    </section>
+</div>
 <div class="trending-container"></div>
 <div class="review-container"></div>
 <div class="blog-container"></div>
@@ -90,6 +126,7 @@
 
 
 <style>
+    /* beginning of every project, i forget how much i use flex. remember to add css variable or one class name to share */
     * {
         padding: 0;
         margin: 0;
@@ -233,5 +270,41 @@
         color: lightseagreen;
         font-weight: bold;
         margin-top: 5px;
+    }
+
+    .value-container {
+        height: 500px;
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+     
+    /* for screens smaller than 750px */
+    @media (max-width: 825px) {
+        .value-container {
+            flex-direction: column;
+        }
+
+        
+    }
+
+
+    .right-value {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-value > article > h2 {
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0.7rem;
+    }
+
+    .right-value > article > h2 > span {
+        color: seagreen;
     }
 </style>
