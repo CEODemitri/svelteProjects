@@ -217,7 +217,7 @@
     }
 
     .popular-container {
-        height: 500px;
+        height: 600px;
         width: 85%;
         margin: auto;
         display: flex;
