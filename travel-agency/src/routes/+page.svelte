@@ -47,39 +47,39 @@
                 <span class="pop-location">el Egypt</span>
                 <article>
                     <!-- icon -->
-                    <span class="pop-rating">5.0</span>
+                    <span class="pop-rating">4.91</span>
                 </article>
             </div>
-			<p class="price">BTC 1,000,000</p>
+			<p class="price">BTC 3.96</p>
 		</article>
 		<article class="box">
             <img src="../elf/elArtica.jpeg" alt="ancient buildings of el Artica" class="pop-img">
-			<h2>This Place</h2>
+			<h2>People's Library</h2>
 			<div class="pop-details">
                 <!-- icon -->
-                <span class="pop-location">Location</span>
+                <span class="pop-location">el Artica</span>
                 <article>
                     <!-- icon -->
-                    <span class="pop-rating">5.0</span>
+                    <span class="pop-rating">4.87</span>
                 </article>
             </div>
-			<p class="price">BTC 1,000,000</p>
+			<p class="price">BTC 0.0143</p>
 		</article>
 		<article class="box">
             <img src="../elf/elGreenLand.jpeg" alt="el GreenLand at late dawn" class="pop-img">
-			<h2>This Place</h2>
+			<h2>Split River</h2>
 			<div class="pop-details">
                 <!-- icon -->
-                <span class="pop-location">Location</span>
+                <span class="pop-location">el GreenLand</span>
                 <article>
                     <!-- icon -->
-                    <span class="pop-rating">5.0</span>
+                    <span class="pop-rating">4.96</span>
                 </article>
             </div>
-			<p class="price">BTC 1,000,000</p>
+			<p class="price">BTC 0.06118</p>
 		</article>
 	</section>
-	<button>See More</button>
+	<button class="see-more">See More</button>
 </div>
 <div class="value-container">
     <!-- image section -->
@@ -118,7 +118,30 @@
         </article>
     </section>
 </div>
-<div class="trending-container"></div>
+<div class="trending-container">
+	<section>
+		<h2 class="popular-title"><span>Trending</span> Destinations in ElfLand</h2>
+		<p class="popular-paragraph">Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
+	</section>
+	<section class="trending-destinations">
+		<article>
+            <img src="../elf/elHogwartsElem.jpeg" alt="el Hogwarts Elementary">
+            <button>el Hogwarts Elem</button>
+		</article>
+		<article>
+            <img src="../elf/elTokyo.jpeg" alt="el Tokyo city walls">
+            <button>el Tokyo</button>
+		</article>
+		<article>
+            <img src="../elf/elEgypt3.jpeg" alt="el Egypt at early dawn">
+            <button>el Egypt early morning</button>
+		</article>
+        <article>
+            <img src="../elf/elLion2.jpeg" alt="el Lion pathway">
+            <button>el Lion</button>
+		</article>
+	</section>
+</div>
 <div class="review-container"></div>
 <div class="blog-container"></div>
 <div class="subscribe-container"></div>
@@ -216,8 +239,8 @@
         max-width: 60%;
     }
 
-    .popular-container {
-        height: 600px;
+    .popular-container, .trending-container {
+        height: 500px;
         width: 85%;
         margin: auto;
         display: flex;
@@ -266,6 +289,11 @@
         border-radius: 10px 0 0 0;
     }
 
+    .see-more {
+        height: 1.8rem;
+        width: 8rem;
+    }
+
     .price {
         color: lightseagreen;
         font-weight: bold;
@@ -274,23 +302,21 @@
 
     .value-container {
         height: 500px;
-        width: 85%;
+        width: 75%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: auto;
-        margin-top: 30px;
     }
      
     /* for screens smaller than 750px */
     @media (max-width: 825px) {
         .value-container {
             flex-direction: column;
+            height: 700px;
+            justify-content: center;
         }
-
-        
     }
-
 
     .right-value {
         display: flex;
@@ -306,5 +332,36 @@
 
     .right-value > article > h2 > span {
         color: seagreen;
+    }
+
+    .trending-container {
+        background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        width: 100%;
+        color: whitesmoke;
+    }
+
+    .trending-destinations {
+        max-width: 75%;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .trending-destinations > article {
+        position: relative;
+    }
+
+    .trending-destinations > article > img {
+        height: 250px;
+        width: 150px;
+    }
+
+    .trending-destinations > article > button {
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        height: 1.8rem;
+        width: 120px;
     }
 </style>
