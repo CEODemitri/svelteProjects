@@ -1,4 +1,8 @@
 <!-- thinking to make a component folder for each container to slim down this page but since first run, let just go -->
+<script>
+    import Review from "../lib/components/Review.svelte";
+</script>
+
 <div class="above">
 	<header>
         <section class="left-nav">
@@ -142,7 +146,9 @@
 		</article>
 	</section>
 </div>
-<div class="review-container"></div>
+<div class="review-container">
+    <Review />
+</div>
 <div class="blog-container"></div>
 <div class="subscribe-container"></div>
 <footer></footer>
@@ -336,7 +342,7 @@
 
     .trending-container {
         background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background: radial-gradient(ellipse, rgb(23, 21, 54) 0%, rgba(13, 13, 42, 0.6) 35%, rgba(0,212,255,0.4) 100%);
         width: 100%;
         color: whitesmoke;
     }
