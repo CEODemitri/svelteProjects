@@ -1,6 +1,7 @@
 <!-- thinking to make a component folder for each container to slim down this page but since first run, let just go -->
 <script>
     import Review from "../lib/components/Review.svelte";
+    import Inspirations from "../lib/components/Inspirations.svelte";
 </script>
 
 <div class="above">
@@ -149,7 +150,9 @@
 <div class="review-container">
     <Review />
 </div>
-<div class="blog-container"></div>
+<div class="blog-container">
+    <Inspirations />
+</div>
 <div class="subscribe-container"></div>
 <footer></footer>
 

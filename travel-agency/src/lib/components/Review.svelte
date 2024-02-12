@@ -1,6 +1,6 @@
 <div class="container">
     <div>
-        <h1>What <span>Elves Say</span> About Us</h1>
+        <h2>What <span>Elves Say</span> About Us</h2>
         <section>
             <p>Explore the positive feedback highlighting memorable experiences with our services</p>
             <article>
@@ -14,14 +14,14 @@
     </div>
     
     <!-- reviews -->
-    <div>
+    <div class="reviews">
         <section>
             <p class="quotes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat, totam aliquid sed eum excepturi doloribus ratione, debitis magni minus aspernatur id facere consectetur.</p>
             <article>
                 <!-- avatar holder -->
                 <div></div>
                 <div>
-                    <h2>Persona 1</h2>
+                    <h3>Persona 1</h3>
                     <p></p>
                 </div>
             </article>
@@ -34,7 +34,7 @@
                 <!-- avatar holder -->
                 <div></div>
                 <div>
-                    <h2>Persona 3</h2>
+                    <h3>Persona 3</h3>
                     <p></p>
                 </div>
             </article>
@@ -47,7 +47,7 @@
                 <!-- avatar holder -->
                 <div></div>
                 <div>
-                    <h2>Persona 1</h2>
+                    <h3>Persona 1</h3>
                     <p></p>
                 </div>
             </article>
@@ -66,7 +66,6 @@
         height: 500px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -84,6 +83,10 @@
 
     .three {
         width: 40ch;
+    }
+
+    .reviews {
+        display: flex;
     }
 </style>
 
