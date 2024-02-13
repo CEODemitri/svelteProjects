@@ -202,6 +202,12 @@
         font-size: 0.8rem;
     }
 
+    @media screen and (max-width: 755px) {
+        .link > ul > li {
+            display: none;
+        }
+    }
+
     .right-nav {
         display: flex;
         justify-content: center;
