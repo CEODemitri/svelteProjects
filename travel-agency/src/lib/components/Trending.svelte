@@ -25,7 +25,7 @@
 
 <style>
     .trending-container {
-        height: 500px;
+        height: max-content;
         width: 85%;
         margin: auto;
         display: flex;
@@ -43,8 +43,9 @@
     }
 
     .trending-destinations {
-        max-width: 75%;
+        max-width: max-content;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         gap: 15px;
     }

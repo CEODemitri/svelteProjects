@@ -8,6 +8,7 @@
     import Trending from "../lib/components/Trending.svelte"
 	import Subscribe from "../lib/components/Subscribe.svelte";
     import Below from "../lib/components/Below.svelte";
+    import Footer from "../lib/components/Footer.svelte";
 </script>
 
 <Above />
@@ -19,13 +20,13 @@
 <Inspirations />
 <Subscribe />
 <Below />
-
+<Footer />
 
 <style>
-    /* beginning of every project, i forget how much i use flex. remember to add css variable or one class name to share */
     * {
         padding: 0;
         margin: 0;
         min-width: 0;
+        overflow: hidden;
     }
 </style>
