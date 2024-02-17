@@ -1,5 +1,5 @@
 <div class="container">
-    <div>
+    <div class="header">
         <h2>What <span>Elves Say</span> About Us</h2>
         <section>
             <p>Explore the positive feedback highlighting memorable experiences with our services</p>
@@ -63,10 +63,16 @@
 
 <style>
     .container {
-        height: 500px;
+        width: 100vw;
+        height: 350px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        margin: 0 25px 0 25px;
     }
 
     .quotes {
@@ -75,6 +81,10 @@
         font-size: 0.8rem;
         border: 1px solid lightgrey;
         padding: 10px 4px;
+    }
+
+    span {
+        color: seagreen;
     }
 
     .two {
@@ -87,6 +97,7 @@
 
     .reviews {
         display: flex;
+        gap: 15px;
     }
 </style>
 

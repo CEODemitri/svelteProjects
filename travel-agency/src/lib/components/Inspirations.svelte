@@ -1,6 +1,6 @@
 <div class="container">
     <!-- top 20% -->
-    <section>
+    <section class="header">
         <h2>Get <span>Inspirations</span> from Our Blog</h2>
         <p>Gain inspiration and insights by exploring our enriching blog content</p>
     </section>
@@ -30,6 +30,15 @@
         width: 500px;
         display: flex;
         flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        margin: 0 25px 0 25px;
+    }
+
+    span {
+        color: steelblue;
     }
 
     section:first-of-type {

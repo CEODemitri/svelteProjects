@@ -1,7 +1,7 @@
 <div class="value-container">
     <!-- image section -->
     <section>
-        <img src="../elf/sight-seeing.png" alt="family using Trek sight seeing, enjoying the view" width="350px">
+        <img src="../elf/sight-seeing.png" alt="family using Trek sight seeing, enjoying the view" width="400px">
     </section>
 
     <!-- text section -->
@@ -14,7 +14,7 @@
         <article class="highlight">
             <!-- each span is an icon -->
             <span></span>
-            <div>
+            <div class="first">
                 <h3>Wide Range Options</h3>
                 <p>Offers a diverse selection of accommodations.</p>
             </div>
@@ -38,20 +38,24 @@
 
 <style>
     .value-container {
-        height: 600px;
-        width: 75%;
+        height: 500px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: auto;
+        margin-top: 50px;
+        background-color: hsl(0, 3%, 93%);
+        font-family: Arial, Helvetica, sans-serif;
     }
      
-    /* for screens smaller than 750px */
+    /* for screens smaller than 825px */
     @media (max-width: 825px) {
         .value-container {
             flex-direction: column;
-            height: 700px;
+            height: max-content;
             justify-content: center;
+            align-items: center;
         }
     }
 
@@ -63,11 +67,15 @@
 
     .right-value > article > h2 {
         font-size: 1.8rem;
-        font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 0.7rem;
     }
 
     .right-value > article > h2 > span {
         color: seagreen;
+    }
+
+    .first {
+        box-shadow: 10px 10px 10px lightgrey;
+        padding: 2px 10px;
     }
 </style>

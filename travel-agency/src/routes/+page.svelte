@@ -7,7 +7,7 @@
 	import Value from "../lib/components/Value.svelte";
     import Trending from "../lib/components/Trending.svelte"
 	import Subscribe from "../lib/components/Subscribe.svelte";
-    import Below from "../lib/components/Above.svelte";
+    import Below from "../lib/components/Below.svelte";
 </script>
 
 <Above />
@@ -16,6 +16,7 @@
 <Value />
 <Trending />
 <Review />
+<Inspirations />
 <Subscribe />
 <Below />
 

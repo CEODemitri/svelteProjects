@@ -1,7 +1,7 @@
 <div class="trending-container">
 	<section>
-		<h2 class="popular-title"><span>Trending</span> Destinations in ElfLand</h2>
-		<p class="popular-paragraph">Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
+		<h2 class="trending-title"><span>Trending</span> Destinations in ElfLand</h2>
+		<p class="trending-paragraph">Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
 	</section>
 	<section class="trending-destinations">
 		<article>
@@ -33,10 +33,13 @@
         justify-content: space-around;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
-        background: rgb(2,0,36);
-        background: radial-gradient(ellipse, rgb(23, 21, 54) 0%, rgba(13, 13, 42, 0.6) 35%, rgba(0,212,255,0.4) 100%);
+        background: linear-gradient(180deg, skyblue, silver);
         width: 100%;
         color: whitesmoke;
+    }
+
+    .trending-title > span {
+        color: steelblue;
     }
 
     .trending-destinations {
