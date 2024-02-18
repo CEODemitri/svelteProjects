@@ -1,8 +1,8 @@
 <div class="above">
 	<header>
         <section class="left-nav">
-            <article class="logo">
-                <p>Trek</p>
+            <article>
+                <p class="logo">Trek</p>
             </article>
             <span class="material-symbols-outlined menu">
                 menu
@@ -65,6 +65,8 @@
 
     .logo {
         font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
     }
 
     .menu {

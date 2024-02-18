@@ -27,6 +27,7 @@
     .trending-container {
         height: max-content;
         width: 85%;
+        padding: 0 20px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -46,8 +47,8 @@
         max-width: max-content;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 15px;
+        justify-content: space-around;
+        gap: 10px;
     }
 
     .trending-destinations > article {
@@ -65,5 +66,12 @@
         left: 15px;
         height: 1.8rem;
         width: 120px;
+    }
+
+    button {
+        background-color: steelblue;
+        border: none;
+        border-radius: 10px 0 10px 0;
+        color: antiquewhite;
     }
 </style>

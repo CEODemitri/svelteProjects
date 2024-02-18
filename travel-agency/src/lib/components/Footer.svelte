@@ -51,7 +51,7 @@
     }
 
     .container {
-        width: 100vw;
+        width: 100%;
         display: flex;
         padding: 20px;
         justify-content: space-around;
@@ -87,6 +87,7 @@
     section:last-of-type {
         display: flex;
         gap: 20px;
+        padding: 0 20px 0 0;
     }
 
     ul {

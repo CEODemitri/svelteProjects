@@ -63,12 +63,13 @@
 
 <style>
     .container {
-        width: 100vw;
+        width: 95vw;
         height: 350px;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
         font-family: Arial, Helvetica, sans-serif;
+        overflow: scroll;
     }
 
     .header {
