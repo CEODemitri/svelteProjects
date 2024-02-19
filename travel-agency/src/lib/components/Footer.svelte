@@ -51,10 +51,11 @@
     }
 
     .container {
-        width: 100%;
+        width: 90%;
         display: flex;
         padding: 20px;
         justify-content: space-around;
+        margin: auto;
     }
 
     @media (max-width: 760px) {

@@ -84,6 +84,8 @@
         display: flex;
         gap: 2rem;
         font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
     }
 
     @media screen and (max-width: 755px) {
