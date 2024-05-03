@@ -38,12 +38,12 @@
 
 	.img {
 		grid-row-start: 1;
-		grid-row-end: 6;
+		grid-row-end: 7;
 	}
 
 	.text {
 		height: 50%;
-		grid-row-start: 6;
+		grid-row-start: 7;
 		grid-row-end: 13;
 		display: flex;
 		flex-direction: column;
@@ -77,8 +77,8 @@
 		background-color: #531cc8;
 		border: none;
 		width: 80%;
-		height: 2.5rem;
-		font-size: 1.3rem;
+		height: 2.6rem;
+		font-size: 1.5rem;
 		color: #fefdfd;
 		border-radius: 10px 0;
 	}
@@ -96,8 +96,8 @@
 		background-color: #493e60;
 		border: none;
 		width: 30%;
-		height: 2rem;
-		font-size: 1.3rem;
+		height: 2.6rem;
+		font-size: 1.5rem;
 		color: #fefdfd;
 		border-radius: 10px 0;
 	}

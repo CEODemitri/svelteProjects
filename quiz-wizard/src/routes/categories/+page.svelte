@@ -3,6 +3,8 @@
 		<a href="/">Home</a>
 		<h1>Quiz Wizard</h1>
 	</div>
+
+	<h2>Categories</h2>
 </div>
 
 <style>
@@ -28,15 +30,31 @@
 		margin: auto;
 		margin-left: 4.5rem;
 		color: #fefdfd;
+		font-family: Helvetica, sans-serif;
 	}
 
 	a {
 		color: #fefdfd;
-		margin-left: 0.5em;
+		position: absolute;
 	}
 
 	a:hover,
 	a:visited {
 		color: #faabab;
+	}
+
+	h2 {
+		color: white;
+		text-align: center;
+		background-color: #131927;
+		margin: auto;
+		margin-top: 1rem;
+		width: 70%;
+		padding: 3rem 0.8rem;
+		border: 1px solid rgb(195, 195, 195);
+		border-radius: 20px;
+		font-family: Helvetica, sans-serif;
+		font-weight: 200;
+		letter-spacing: 0.3rem;
 	}
 </style>
