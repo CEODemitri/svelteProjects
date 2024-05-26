@@ -13,7 +13,7 @@
 
 		<article class="btns">
 			<button class="sea">
-				<a href="./categories">See Categories</a>
+				<a href="/Categories">See Categories</a>
 			</button>
 			<button class="stats">Stats</button>
 		</article>
@@ -22,29 +22,24 @@
 
 <style>
 	.container {
-		max-width: 425px;
-		height: 95vh;
 		background-color: #0c1019;
 		color: white;
 		margin: auto;
 		overflow: hidden;
-		display: grid;
-		grid-template-rows: repeat(12, 1fr);
-		grid-template-columns: repeat(6, 1fr);
-
-		/* display: flex;
-		flex-direction: column; */
+		display: flex;
+		flex-direction: column;
 	}
 
 	.img {
-		grid-row-start: 1;
-		grid-row-end: 7;
+		height: 50%;
+	}
+
+	img {
+		height: 414px;
 	}
 
 	.text {
-		height: 50%;
-		grid-row-start: 7;
-		grid-row-end: 13;
+		height: 50vh;
 		display: flex;
 		flex-direction: column;
 	}
@@ -67,7 +62,7 @@
 	.btns {
 		display: flex;
 		flex-direction: column;
-		margin-top: 10rem;
+		margin-top: 7rem;
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
