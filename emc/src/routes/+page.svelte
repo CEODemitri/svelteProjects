@@ -55,7 +55,41 @@
 	</section>
 
 	<section>
-		<div></div>
+		<ul>
+			<li>Stay</li>
+			<li>Flights</li>
+		</ul>
+		<div>
+			<article>
+				<section>
+					<h1>Location</h1>
+					<p>Destination</p>
+				</section>
+				<section><a href=""></a></section>
+			</article>
+			<article>
+				<section>
+					<h1>Leaving</h1>
+					<p>Depature</p>
+				</section>
+				<section><a href=""></a></section>
+			</article>
+			<article>
+				<section>
+					<h1>Returning</h1>
+					<p>Arrival</p>
+				</section>
+				<section><a href=""></a></section>
+			</article>
+			<article>
+				<section>
+					<h1>Guests</h1>
+					<p>Total</p>
+				</section>
+				<section><a href=""></a></section>
+			</article>
+			<button>Search</button>
+		</div>
 	</section>
 </div>
 
@@ -71,11 +105,19 @@
 		display: flex;
 	}
 
+	button {
+		padding: 5px 2em;
+		font-size: 1rem;
+	}
+
+	/* hero start */
+
 	.home {
 		height: 90vh;
 		min-height: 600px;
 		background: url('../landing.png');
-		background-size: cover;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 		color: white;
 		font-family: 'Josefin Sans', sans-serif;
 		display: flex;
@@ -188,16 +230,57 @@
 
 	/* cta begins */
 	.home > section:last-of-type {
-		width: 80%;
-		height: 15vh;
-		background-color: #185fb2;
-		margin: 1em auto;
-		border-radius: 0.6em;
+		width: 90%;
+		height: 13vh;
+		margin: 0 auto;
+		anchor-name: --cta;
 	}
 
 	@media (max-width: 600px) {
 		.home > section:last-of-type {
 			display: none;
 		}
+	}
+
+	.home > section:last-of-type > ul {
+		width: fit-content;
+		display: flex;
+		font-weight: bold;
+		z-index: -100;
+		gap: 0;
+	}
+
+	.home > section:last-of-type > ul > li:first-of-type {
+		background-color: #185fb2;
+		padding: 1em 3em;
+		color: white;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.home > section:last-of-type > ul > li:last-of-type {
+		background-color: #a6a6a660;
+		padding: 1em 3em;
+		color: rgb(34, 34, 34);
+		border-radius: 10px 10px 0 0;
+	}
+
+	.home > section:last-of-type > div {
+		display: flex;
+		height: 100%;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #b5d2f29a;
+		border-radius: 1.3em;
+	}
+
+	.home > section:last-of-type > div > article > section > h1 {
+		color: black;
+		font-size: 1rem;
+	}
+
+	article > section > p {
+		color: black;
+		font-size: 0.8rem;
+		text-align: center;
 	}
 </style>
