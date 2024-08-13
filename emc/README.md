@@ -9,3 +9,13 @@ Travel Agency, recreating site from their Design. I am the Programmer to make th
 1. Recieved Design File and Assets from Client.
 2. Repo reVamped In in Motion.
 3. Push thru hero section. only left is the cta area.
+
+---
+
+8 12
+
+1. CTA Styling
+
+TODO
+
+1. Fix Returning and Guests
