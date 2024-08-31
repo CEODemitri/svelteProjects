@@ -259,7 +259,7 @@
 
 	.home > section:last-of-type > ul > li:last-of-type {
 		background-color: #a6a6a660;
-		padding: 1em 3em;
+		padding: 0.4em 3em;
 		color: rgb(34, 34, 34);
 		border-radius: 16px 16px 0 0;
 	}
