@@ -6,95 +6,99 @@
 	import Down from '../components/icons/Down.svelte';
 </script>
 
-<div class="home">
-	<header>
-		<nav class="flex">
-			<a href="/" class="flex">
-				<Logo />
-				<p>emc</p>
-			</a>
+<div>
+	<div class="home">
+		<header>
+			<nav class="flex">
+				<a href="/" class="flex">
+					<Logo />
+					<p>emc</p>
+				</a>
 
-			<section class="flex">
-				<ul class="flex">
-					<li>Home</li>
-					<li>About</li>
-					<li>Flights</li>
-					<li>Stay</li>
-				</ul>
+				<section class="flex">
+					<ul class="flex">
+						<li>Home</li>
+						<li>About</li>
+						<li>Flights</li>
+						<li>Stay</li>
+					</ul>
 
-				<div class="flex">
-					<p>Find Deals</p>
-					<button>Sign In</button>
-				</div>
-			</section>
-		</nav>
-	</header>
+					<div class="flex">
+						<p>Find Deals</p>
+						<button>Sign In</button>
+					</div>
+				</section>
+			</nav>
+		</header>
 
-	<section>
-		<div>
-			<h1><span>E</span>xplore Your Dream <span>E</span>xtraTerrestrial <span>E</span>scape</h1>
-			<p>
-				Gather your imagination and bring it to life with our outer-worldly experiences. We bring
-				adventure and escape to your fingertips. See what we have to offer.
-			</p>
-		</div>
-	</section>
+		<section>
+			<div>
+				<h1><span>E</span>xplore Your Dream <span>E</span>xtraTerrestrial <span>E</span>scape</h1>
+				<p>
+					Gather your imagination and bring it to life with our outer-worldly experiences. We bring
+					adventure and escape to your fingertips. See what we have to offer.
+				</p>
+			</div>
+		</section>
 
-	<section>
-		<ul class="tabs">
-			<li>
-				<span class="svg"><Hotel /></span>
-				<p>Stay</p>
-			</li>
-			<li>
-				<span class="svg"><Flight /></span>
-				<p>Flights</p>
-			</li>
-		</ul>
-		<div>
-			<article>
-				<section>
-					<h1>
-						<p>Location</p>
-						<span><Location /></span>
-					</h1>
-					<p>Destination</p>
-				</section>
-				<section><a href=""></a></section>
-			</article>
-			<article>
-				<section>
-					<h1>
-						<p>Leaving</p>
-						<span><Down /></span>
-					</h1>
-					<p>Depature</p>
-				</section>
-				<section><a href=""></a></section>
-			</article>
-			<article>
-				<section>
-					<h1>
-						<p>Returning</p>
-						<span><Down /></span>
-					</h1>
-					<p>Arrival</p>
-				</section>
-				<section><a href=""></a></section>
-			</article>
-			<article>
-				<section>
-					<h1>
-						<p>Guests</p>
-						<span><Down /></span>
-					</h1>
-					<p>Total</p>
-				</section>
-				<section><a href=""></a></section>
-			</article>
-			<button class="search">Search</button>
-		</div>
-	</section>
+		<section>
+			<ul class="tabs">
+				<li>
+					<span class="svg"><Hotel /></span>
+					<p>Stay</p>
+				</li>
+				<li>
+					<span class="svg"><Flight /></span>
+					<p>Flights</p>
+				</li>
+			</ul>
+			<div class="bar">
+				<article>
+					<section>
+						<h1>
+							<p>Location</p>
+							<span><Location /></span>
+						</h1>
+						<p>Destination</p>
+					</section>
+					<section><a href=""></a></section>
+				</article>
+				<article>
+					<section>
+						<h1>
+							<p>Leaving</p>
+							<span><Down /></span>
+						</h1>
+						<p>Depature</p>
+					</section>
+					<section><a href=""></a></section>
+				</article>
+				<article>
+					<section>
+						<h1>
+							<p>Returning</p>
+							<span><Down /></span>
+						</h1>
+						<p>Arrival</p>
+					</section>
+					<section><a href=""></a></section>
+				</article>
+				<article>
+					<section>
+						<h1>
+							<p>Guests</p>
+							<span><Down /></span>
+						</h1>
+						<p>Total</p>
+					</section>
+					<section><a href=""></a></section>
+				</article>
+				<button class="search">Search</button>
+			</div>
+		</section>
+	</div>
+
+	<div class="popular"></div>
 </div>
 
 <style>
@@ -129,17 +133,6 @@
 		gap: 15vh;
 
 		padding: 1em 3em;
-	}
-
-	.home::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(180deg, hsla(260, 87%, 9%, 0.6), hsla(260, 87%, 9%, 0.2));
-		z-index: 1;
 	}
 
 	.home * {
@@ -289,10 +282,13 @@
 		justify-content: space-around;
 		align-items: center;
 		text-align: left;
-		background-color: #b5d2f29a;
+		background-color: #395a7d9a;
 		border-radius: 1.3em;
 		z-index: 100;
-		backdrop-filter: blur(0.35em);
+		backdrop-filter: blur(50px);
+		-ms-filter: blur(4px);
+		-moz-filter: blur(4px);
+		-webkit-backdrop-filter: blur(09px);
 	}
 
 	.search {
@@ -311,5 +307,9 @@
 		color: black;
 		font-size: 0.8rem;
 		text-align: center;
+	}
+
+	.popular {
+		height: 90vh;
 	}
 </style>
