@@ -98,7 +98,12 @@
 		</section>
 	</div>
 
-	<div class="popular"></div>
+	<div class="popular">
+		<article class="section-title">
+			<h2><span>Popular</span> Accommodations Near You</h2>
+			<p>Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
+		</article>
+	</div>
 </div>
 
 <style>
@@ -116,6 +121,16 @@
 	button {
 		padding: 5px 2em;
 		font-size: 1rem;
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: 3em;
+		margin: 5em 0;
+	}
+
+	.section-title p {
+		color: #434343;
 	}
 
 	/* hero start */
@@ -310,6 +325,15 @@
 	}
 
 	.popular {
-		height: 90vh;
+		height: 50vh;
+	}
+
+	.section-title h2 {
+		font-size: 2.5em;
+		color: #434343;
+	}
+
+	.section-title h2 span {
+		color: #185fb2;
 	}
 </style>
