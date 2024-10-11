@@ -4,6 +4,7 @@
 	import Logo from '../components/icons/Logo.svelte';
 	import Location from '../components/icons/Location.svelte';
 	import Down from '../components/icons/Down.svelte';
+	import Card from '../components/Card.svelte';
 </script>
 
 <div>
@@ -103,6 +104,13 @@
 			<h2><span>Popular</span> Accommodations Near You</h2>
 			<p>Explore a range of popular accommodations near you. Comfort place for a memorable stay!</p>
 		</article>
+
+		<!-- cards -->
+		<div class="grid height-300">
+			<Card />
+			<Card />
+			<Card />
+		</div>
 	</div>
 </div>
 
@@ -116,6 +124,20 @@
 	/* utility */
 	.flex {
 		display: flex;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		grid-template-rows: repeat(3, auto);
+		gap: 2em;
+	}
+
+	@media (min-width: 768px) {
+		.grid {
+			grid-template-columns: repeat(3, 1fr); /* Tablet: 3 columns */
+			grid-template-rows: auto; /* Single row */
+		}
 	}
 
 	button {
@@ -133,7 +155,11 @@
 		color: #434343;
 	}
 
-	/* hero start */
+	.height-300 {
+		max-height: 300px;
+	}
+
+	/* nav start */
 
 	.home {
 		height: 90vh;
@@ -146,7 +172,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15vh;
-
 		padding: 1em 3em;
 	}
 
@@ -336,4 +361,8 @@
 	.section-title h2 span {
 		color: #185fb2;
 	}
+
+	/* popular start */
+
+	/* popular end */
 </style>
