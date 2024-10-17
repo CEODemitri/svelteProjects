@@ -9,6 +9,7 @@
 
 <div>
 	<div class="home">
+		<div class="shader"></div>
 		<header>
 			<nav class="flex">
 				<a href="/" class="flex">
@@ -16,18 +17,16 @@
 					<p>emc</p>
 				</a>
 
-				<section class="flex">
-					<ul class="flex">
-						<li>Home</li>
-						<li>About</li>
-						<li>Flights</li>
-						<li>Stay</li>
-					</ul>
+				<ul class="flex">
+					<li>Home</li>
+					<li>About</li>
+					<li>Flights</li>
+					<li>Stay</li>
+				</ul>
 
-					<div class="flex">
-						<p>Find Deals</p>
-						<button>Sign In</button>
-					</div>
+				<section class="flex">
+					<p>Find Deals</p>
+					<button>Sign In</button>
 				</section>
 			</nav>
 		</header>
@@ -124,6 +123,8 @@
 	/* utility */
 	.flex {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.grid {
@@ -159,12 +160,10 @@
 		max-height: 300px;
 	}
 
-	/* nav start */
-
 	.home {
 		height: 90vh;
 		min-height: 600px;
-		background: url('../landing.png');
+		background: url('../1.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		color: white;
@@ -173,28 +172,26 @@
 		flex-direction: column;
 		gap: 15vh;
 		padding: 1em 3em;
-	}
-
-	.home * {
 		position: relative;
-		z-index: 2;
 	}
 
-	nav {
-		align-items: center;
-		gap: 4em;
+	.shader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 60%;
+		background: linear-gradient(180deg, #a8a598a7 0%, rgba(0, 0, 0, 0) 100%);
+		z-index: 1;
 	}
 
-	nav > a {
-		align-items: center;
-		text-decoration: none;
-		gap: 0.4em;
-	}
-
-	a > p {
-		font-size: 1.5em;
-		text-decoration: none;
-		color: white;
+	/* nav start */
+	nav ul {
+		background: #a8a598c1;
+		padding: 8px 2em;
+		letter-spacing: 0.2em;
+		color: #fff;
+		border-radius: 6px;
 	}
 
 	ul {
@@ -215,27 +212,14 @@
 		}
 	}
 
-	nav > section {
-		width: 83%;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	nav > section > div {
-		gap: 1em;
-		justify-content: space-between;
-		align-items: center;
-	}
-
 	button {
 		width: fit-content;
 		padding: 0.4em 1em;
 		border: none;
 		border-radius: 0.3em;
-		background-color: #185fb2;
+		background-color: #051324;
 		color: aliceblue;
 		letter-spacing: 0.3em;
-		font-family: 'Racing Sans One', sans-serif;
 	}
 
 	/* nav bar style end */
@@ -244,10 +228,11 @@
 
 	h1 {
 		font-family: 'Racing Sans One', sans-serif;
-		font-size: clamp(2em, 6vh, 6em);
-		width: 75%;
+		font-size: clamp(1.8em, 5.6vh, 6em);
 		letter-spacing: 0.1em;
 		text-shadow: -10px -10px -2px rgba(0, 0, 0, 0.5);
+		text-align: center;
+		text-transform: uppercase;
 		text-overflow: ellipsis;
 	}
 
@@ -258,9 +243,11 @@
 	h1 + p {
 		width: 65%;
 		font-size: larger;
-		color: #a6a6a6;
+		color: #f3f3f3;
 		line-height: 1.5em;
 		margin-top: 1.3em;
+		text-align: justify;
+		margin: auto;
 	}
 
 	/* hero ends */
