@@ -12,7 +12,7 @@
 		<div class="shader"></div>
 		<header>
 			<nav class="flex">
-				<a href="/" class="flex">
+				<a href="/" class="flex left">
 					<Logo />
 					<p>emc</p>
 				</a>
@@ -24,7 +24,7 @@
 					<li>Stay</li>
 				</ul>
 
-				<section class="flex">
+				<section class="flex right">
 					<p>Find Deals</p>
 					<button>Sign In</button>
 				</section>
@@ -192,6 +192,12 @@
 		letter-spacing: 0.2em;
 		color: #fff;
 		border-radius: 6px;
+		place-self: center center;
+	}
+
+	.right,
+	.light {
+		width: 75px;
 	}
 
 	ul {
