@@ -9,7 +9,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase"><a href="/">SVELTE25</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -18,7 +18,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
+					LinkedIn
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"

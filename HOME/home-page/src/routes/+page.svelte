@@ -27,10 +27,12 @@
 
 	<main class="col-start-4 col-span-7 row-start-2 row-span-11">
 		<!-- project listing -->
-		 <article>
+		 <article class="bg-red-400 card p-4">
 			<h3>Travel Porftolio: EMC</h3>
 			<a href="../../../../emc/src/routes/+page.svelte">
-				<img src="/projectBG/emc.png" alt="here we go" class="img-bg">
+				<div class="img-bg">
+					<img src="/projectBG/emc.png" alt="here we go">
+				</div>
 			</a>
 		 </article>
 	</main>
