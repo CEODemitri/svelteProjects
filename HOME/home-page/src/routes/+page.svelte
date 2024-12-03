@@ -1,4 +1,4 @@
-<div class="container grid grid-cols-12  grid-rows-12 gap-4 h-full">
+<div class="container grid grid-cols-12 grid-rows-12 gap-4 h-full">
 	<article class="col-start-4 col-span-7 row-start-1 row-span-1 bg-blue-500">
 		<h1>Hallo!</h1>
 		<p>Welcome to My Portfolio of Sveltekit Project. Watch as I progress through Each Project.</p>
@@ -9,7 +9,7 @@
 		<!-- project listing prototype -->
 		<article>
 			<h2>Travel Business: EMC</h2>
-			<p>Completion Percentage</p>
+			<p>20%</p>
 		</article>
 		<article>
 			<h2>Project Tile</h2>
@@ -27,11 +27,11 @@
 
 	<main class="col-start-4 col-span-7 row-start-2 row-span-11">
 		<!-- project listing -->
-		 <a href="../../../../emc/src/routes/+page.svelte">
+		<a href="../../../../emc/src/routes/+page.svelte">
 			<article class="card p-4 bg-[url('/projectBG/emc.png')] h-1/3 w-2/5 bg-cover rounded-md">
-			<h3>Travel Porftolio: EMC</h3>
-		 </article>
-		 </a>
+				<h3>Travel Porftolio: EMC</h3>
+			</article>
+		</a>
 	</main>
 </div>
 
@@ -45,7 +45,8 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
+		animation:
+			pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
 			glow 5s linear infinite;
 	}
 	@keyframes glow {
