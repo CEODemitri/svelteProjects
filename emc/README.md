@@ -21,3 +21,8 @@ Travel Agency, recreating site from their Design. I am the Programmer to make th
 TODO
 
 1. Fix Returning and Guests
+
+---
+
+12 3
+3 months later and at this exact point. fell into a dark space, climbing out screaming power.
