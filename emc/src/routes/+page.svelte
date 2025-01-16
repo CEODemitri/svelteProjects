@@ -27,6 +27,11 @@
 				</ul>
 			</nav>
 			<!-- hero text -->
+			<h1 class="">Explore Your dream extraterrestrial escape</h1>
+			<p>
+				Gather your imagination and bring it to life with our outer-worldly experiences. We bring
+				adventure and escape to your fingertips. See what we have to offer.
+			</p>
 		</section>
 
 		<!-- search bar -->
@@ -65,11 +70,25 @@
 
 	.hero-text {
 		grid-column: 1/-1;
-		grid-row: 1/6;
+		grid-row: 1/5;
 		background-color: #a8a598;
-		opacity: 48%;
-		filter: blur(1px);
 		display: subgrid;
+	}
+
+	.hero-text > h1 {
+		text-transform: uppercase;
+		font-size: 1.6em;
+		text-align: center;
+		letter-spacing: 1.1em;
+		color: white;
+		/* grid-column: 3/10;
+		grid-row: 3/5; */
+	}
+
+	.hero-text > p {
+		color: white;
+		/* grid-column: 4/9;
+		grid-row: 3/5; */
 	}
 
 	nav {
