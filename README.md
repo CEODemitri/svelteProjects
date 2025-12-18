@@ -4,7 +4,7 @@ A very long learning lesson to grow as a Developer. Fell in love with Svelte|kit
 
 ## Official Launch
 
-November 3, 2024
+December 17, 2024
 
 ---
 
@@ -29,7 +29,6 @@ Travel Agency
 
 - Front End Application
 - Landing Page for a Local Company looking to increase online presence.
-  Enhancing the current Website will be a start.
 - Create a Slick, Edgy design while keeping information available.
 
-  [ Start: Nov 3, 2024 | Agile ]
+  [ Start: Dec 17, 2024 | 🪡 ]
