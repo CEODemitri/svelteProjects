@@ -16,7 +16,7 @@
 				{/each}
 			</ul>
 
-			<p>Electric Electrician</p>
+			<p class="logo">Electric Electrician</p>
 		</nav>
 	</header>
 	<main>
@@ -24,4 +24,25 @@
 	</main>
 </div>
 
-<style></style>
+<style>
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+		padding: 0;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #f8f8f8;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #333;
+	}
+</style>

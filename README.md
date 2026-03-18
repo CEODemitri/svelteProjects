@@ -25,10 +25,11 @@ December 17, 2024
 
 ### Project One
 
-Travel Agency
+Electric Electrician
 
 - Front End Application
 - Landing Page for a Local Company looking to increase online presence.
 - Create a Slick, Edgy design while keeping information available.
 
   [ Start: Dec 17, 2024 | 🪡 ]
+  [ re-Start: Mar 17, 2026 | 🦃 ]
